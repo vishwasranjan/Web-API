@@ -1,0 +1,15 @@
+<div>
+<div  *ngIf="con">
+    <div style="margin: 2px;font-weight: bold;color: brown;" class="row">
+        <div class="col">{{con.userId}}</div>
+        <div class="col">{{con.userName}}</div>
+        <div class="col">{{con.email}}</div>
+        <div class="col">{{con.phone}}</div>
+        <div class="col"><button (click)="showCourses()" class="btn btn-primary">View</button></div>
+        
+    </div>
+</div>
+<div *ngIf="show">
+    <app-courses [x]="uid"></app-courses>
+</div>
+</div>

@@ -1,0 +1,13 @@
+
+<div>
+    <div style="margin: 2px;" class="row">
+        <div class="col">Exam Id</div>
+        <div class="col">Subject</div>
+        <div class="col">Subject Code</div>
+        <div class="col">Duration</div>
+        <div class="col">Date</div>
+    </div>
+    <div *ngFor="let c of course">
+        <app-course-item [cou]="c"></app-course-item>
+    </div>
+</div>

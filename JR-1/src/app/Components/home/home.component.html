@@ -1,0 +1,18 @@
+<div class="conatainer">
+    <div class="row alert" style="background-color:#1976D2 ;">
+        <div class="col">
+          <h2>Web API</h2>
+        </div>
+    </div>
+    <div class="row">
+
+    
+        <div class="col-sm-3 alert alert-light">
+            <button (click)="showUserlist()" class="btn btn-dark" style="width: 100%">All Users</button>
+
+        </div>
+        <div *ngIf="show" class="col-sm-8">
+            <app-contact-list></app-contact-list>
+        </div>
+    </div>
+</div>
